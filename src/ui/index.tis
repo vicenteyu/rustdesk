@@ -7,7 +7,7 @@ const msgbox_default_height = 180;
 const incoming_only_width = 180;
 
 const outgoing_only = handler.is_outgoing_only();
-const incoming_only = handler.is_incoming_only();
+const incoming_only = true;
 const disable_installation = handler.is_disable_installation();
 const disable_account = handler.is_disable_account();
 const disable_settings = handler.is_disable_settings();
@@ -82,7 +82,7 @@ class ConnectStatus: Reactor.Component {
             return translate('connecting_status');
         }
         if (!handler.using_public_server()) return translate('Ready');
-        return <span>{translate("Ready")}, <span .link #setup-server>{translate("setup_server_tip")}</span></span>;
+        return <span>{translate("Ready")}</span>;
     }
 
     event click $(#start-service) () {

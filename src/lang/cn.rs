@@ -3,7 +3,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
     [
         ("Status", "状态"),
         ("Your Desktop", "你的桌面"),
-        ("desk_tip", "你的桌面可以通过下面的 ID 和密码访问。"),
+        ("desk_tip", "ITELLYOU 专用"),
         ("Password", "密码"),
         ("Ready", "就绪"),
         ("Established", "已建立"),
@@ -170,7 +170,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Local Port", "本地端口"),
         ("Local Address", "当前地址"),
         ("Change Local Port", "修改本地端口"),
-        ("setup_server_tip", "如果需要更快连接速度，你可以选择自建服务器"),
+        ("setup_server_tip", ""),
         ("Too short, at least 6 characters.", "太短了，至少 6 个字符"),
         ("The confirmation is not identical.", "两次输入不匹配"),
         ("Permissions", "权限"),
